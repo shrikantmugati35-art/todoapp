@@ -1,0 +1,90 @@
+/* Basic page styling */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6b85d8, #81cad5, #dbeafe);
+    min-height: 100vh;
+    margin: 0;
+    padding: 50px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+/* Main heading */
+h1 {
+    color: #2563eb;
+    margin-bottom: 25px;
+}
+
+/* Task input */
+input[type="text"] {
+    padding: 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Add task button */
+#addTaskBtn {
+    padding: 12px 18px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+#addTaskBtn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Task list */
+#taskList {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 25px auto;
+}
+
+/* Individual tasks */
+#taskList li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-wrap: anywhere;
+}
+
+/* Delete button */
+.deletebtn {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 12px;
+    flex-shrink: 0;
+}
+
+.deletebtn:hover {
+    background-color: #dc2626;
+}
+
+/* Mobile responsive design */
+@media (max-width: 480px) {
+    input[type="text"] {
+        width: 55%;
+    }
+
+    #addTaskBtn {
+        padding: 12px 10px;
+    }
+}
